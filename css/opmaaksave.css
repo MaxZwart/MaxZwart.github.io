@@ -3,32 +3,27 @@
   padding: 0px;
 }
 body {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   background-image: url(501760.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   /*-- Font --*/
-  font-family: ;
+    font-family: helvetica;
 }
-
-
-.grid-container > div{
-
-
-}
-
 /*-- Header --*/
 .header{
   grid-area: header;
-  width: 100%;
+  width:;
   height: 80px;
 background-color: white;
+  font-family: none ;
 }
 /*-- Header content --*/
 #header{
-width: 120px;
+
+max-width: 140px;
 color:black;
 padding-top:10px;
 padding-left: 10px;
@@ -50,7 +45,7 @@ padding-top:3px;
 .nav{
   grid-area: nav;
   background-color: white;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     height: 80px;
 }
 /*-- nav content --*/
@@ -85,7 +80,7 @@ nav  li a:hover:not(.nav-active) {
 
 /*-- Content --*/
 .content{
-  width: 100%;
+  max-width: 100%;
   height: 100px;
   grid-area: content;
   z-index: 3;
@@ -97,12 +92,14 @@ nav  li a:hover:not(.nav-active) {
 /*-- content content?--*/
 .image{
   grid-area: image;
-  height: 100%;
-  padding: 20px 0px 0px 20px;
+  height: 90%;
+  max-width: 100%;
+  padding: 2% 7% 2% 7%;
   z-index: 4;
-  margin-top: 40px;
+  margin-top: 8%;
   overflow: hidden;
   background-color: rgba(255, 255, 255,0.6);
+  text-align: center;
 }
 /*-- image content --*/
 #summary  {
@@ -111,22 +108,25 @@ float: left;
 display: inline-block;
 width: 80%;
 height: 20%;
-margin: 10px 10px;
+margin: 0% 10% 5% 10%;
 background-color:rgba(255, 255, 255,1);
 border: solid rgba(255, 255, 255,1) 2px;
 border-radius: 3px;
 color: rgb(19, 129, 155);
 text-align: center;
 }
+ .image ul a:hover{
+  background-color:  rgba(19, 129, 155, 1);
+}
 .image img{
- width: 90%;
+ width: 100%;
  height: 50%;
  position: relative;
  bottom: 25px;
 }
-.image p{
+.image h4{
   position: relative;
-  bottom: 40px;
+  bottom: 10px;
 }
 /*-- Footer --*/
 .footer{
@@ -134,7 +134,7 @@ text-align: center;
   background-color: rgba(0, 0, 0, 0.5) ;
   text-align: center;
   padding: 20px 20px;
-  margin-top: 25%;
+  margin-top: 5%;
   height: 100px;
   color:rgba(19, 129, 155, 0.5);
 }
@@ -143,11 +143,10 @@ text-align: center;
 color:rgba(19, 129, 155, 0.5);
 text-decoration: none;
 }
-.footer a:hover{
-  color:rgba(19, 129, 155, 1);
-
-/*-- Grid container's --*/
+.image a:hover{
+  background-color: rgba(19, 129, 155, 1);
 }
+/*-- Grid container's --*/
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -169,14 +168,18 @@ text-decoration: none;
   .image{
     overflow: hidden;
     padding-left: auto;
+    height: 60%;
   }
   #summary{
     display: block;
+    float: left;
+    margin: 5% 20px;
+
     width: 25%;
     height: 15%;
   }
   .image img{
-    width:90%;
+    width:100%;
     height: 60%;
     position: relative;
     bottom: 10px;
@@ -190,24 +193,19 @@ text-decoration: none;
     'footer  footer  footer   footer';
   }
   .content{
-    width: 130%;
+    max-width: 100%;
   }
   .image{
-    width: 50%;
-    height: 90%;
-    position: relative;
-    left: 50%;
+    width: 93%;
+    height: 100%;
+    padding: 0% 0% 1% 7%;
+    margin-top: 0%;
+
   }
   #summary{
-    overflow: hidden;
-    display: inline;
-    width: 80%;
-    height: 20%;
-    max-height: 150px;
-  }
-  .image img{
-    position: relative;
-    bottom: 30px;
-    width: 80%;
+    overflow:hidden;
+    display: block;
+    width: 25%;
+    height: 15%;
   }
 }
