@@ -11,6 +11,7 @@ body {
   background-repeat: no-repeat;
   /*-- Font --*/
     font-family: helvetica;
+    /* font-size-adjust for future finetuning */
 }
 /*-- Header --*/
 .header{
@@ -160,6 +161,21 @@ text-align: center;
   float: left;
   width: 80%;
   height: 50%;
+}
+.contact{
+  padding: 40px 50px;
+  text-align: left;
+}
+.contact a{
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
+.contact a:hover{
+  background: green;
+  border: solid darkgreen 2px;
+  color: black;
+  padding: 2px;
 }
 /*-- Footer --*/
 .footer{
