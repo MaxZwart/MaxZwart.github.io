@@ -92,6 +92,17 @@ nav  li a:hover:not(.nav-active) {
 .content h1, h2, h3, h4, p {
 
 }
+.content a{
+  color:  white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.content a:hover{
+  background-color: rgba(19, 129, 155, 1);
+  border: solid white 2px;
+  color: white;
+  padding:2px;
+}
 /*-- Image --*/
 .image{
   grid-area: image;
@@ -200,7 +211,7 @@ text-decoration: none;
     width: 25%;
     height: 15%;
   }
-  .image img{
+  #summary img{
     width:100%;
     height: 60%;
     position: relative;
